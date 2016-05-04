@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<phpunit colors="true" bootstrap="vendor/autoload.php">
+  <testsuites>
+    <testsuite name="Mouson/Helpers">
+      <directory>./tests/</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist>
+        <directory suffix=".php">./src/</directory>
+    </whitelist>
+  </filter>
+  <logging>
+    <log type="coverage-html" target="review/code-coverage"/>
+    <log type="coverage-clover" target="review/logs/phpunit.xml"/>
+    <log type="json" target="review/logs/phpunit.json"/>
+    <log type="tap" target="review/logs/phpunit.tap"/>
+    <log type="junit" target="review/logs/phpunit-junit.xml"/>
+    <log type="testdox-html" target="review/testdox.html"/>
+    <log type="testdox-text" target="review/testdox.txt"/>
+  </logging>
+</phpunit>
