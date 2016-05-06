@@ -16,19 +16,23 @@ Run this command to add this library to your `composer.json` file:
 
 ## Quick Start Guide
 
+### use
+
+```php
+use Mouson\Helpers\ChineseNumericHelper;
+```
+
 ### arabic numerals converted to lower case chinese numerals
 
 ```php
-$sample = 123;
-$chinese = ChineseNumericHelper::Numeric2Chinese($sample);
+$chinese = ChineseNumericHelper::Numeric2Chinese(123);
 echo $chinese; \\ 一百二十三
 ```
 
 ### arabic numerals converted to upper case chinese numerals
 
 ```php
-$sample = 123;
-$chinese = ChineseNumericHelper::Numeric2Chinese($sample, true);
+$chinese = ChineseNumericHelper::Numeric2Chinese(123, true);
 echo $chinese; \\ 壹佰貳拾參
 ```
 
@@ -48,18 +52,22 @@ echo $chinese; \\ 壹佰貳拾參
 
 ## 使用
 
+### 引用
+
+```php
+use Mouson\Helpers\ChineseNumericHelper;
+```
+
 ### 小寫中文轉換
 
 ```php
-$sample = 123;
-$chinese = ChineseNumericHelper::Numeric2Chinese($sample);
+$chinese = ChineseNumericHelper::Numeric2Chinese(123);
 echo $chinese; \\ 一百二十三
 ```
 
 ### 大寫中文轉換
 
 ```php
-$sample = 123;
-$chinese = ChineseNumericHelper::Numeric2Chinese($sample, true);
+$chinese = ChineseNumericHelper::Numeric2Chinese(123, true);
 echo $chinese; \\ 壹佰貳拾參
 ```
