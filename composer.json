@@ -1,6 +1,6 @@
 {
   "name": "mouson/chinese-numerals",
-  "description": "PHP Arabic numerals converted to Chinese numerals tools.",
+  "description": "阿拉伯數字轉換中文數字工具 PHP Arabic numerals converted to Chinese numerals tools.",
   "keywords": [
     "helper",
     "converter"
